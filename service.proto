@@ -1,0 +1,25 @@
+syntax = "proto3";
+
+import "google/protobuf/descriptor.proto";
+
+message ChewbaccaOptions {
+    string url = 1;
+}
+
+extend google.protobuf.MethodOptions {
+  ChewbaccaOptions chewbacca = 51234;
+}
+
+message ExampleReq {
+}
+
+message ExampleResp {
+}
+
+service ExampleService {
+    rpc exampleCall(ExampleReq) returns (ExampleResp) {
+        option (chewbacca) = {
+            url: "/api/v1/example"
+        };
+    }
+}
