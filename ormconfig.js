@@ -11,6 +11,7 @@ module.exports = {
     ],
     migrations: [
        "src/orm/migration/*.ts"
-    ]
+    ],
+    bigNumberStrings: true
  }
  
