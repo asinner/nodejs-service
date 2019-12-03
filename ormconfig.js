@@ -3,11 +3,11 @@ module.exports = {
     host: "localhost",
     port: 3306,
     username: "root",
-    database: "identity",
+    database: "dbname",
     synchronize: true,
     logging: false,
     entities: [
-       "src/orm/entities/*.ts"
+       "src/lib/entities/*.ts"
     ],
     bigNumberStrings: true
  }
