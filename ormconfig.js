@@ -7,10 +7,7 @@ module.exports = {
     synchronize: true,
     logging: false,
     entities: [
-       "src/orm/models/*.ts"
-    ],
-    migrations: [
-       "src/orm/migration/*.ts"
+       "src/lib/entities/*.ts"
     ],
     bigNumberStrings: true
  }
